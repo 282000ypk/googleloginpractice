@@ -1,0 +1,15 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ${clientid}
+            clientSecret: ${clientsecret}
+            scope:
+              - email
+              - profile
